@@ -9,7 +9,7 @@ import Nav from "./components/Nav.jsx";
 import About from "./views/About.jsx";
 import Detail from "./views/Detail.jsx"
 import "./App.css";
-
+// hay que importar y descargar react reduxS
 
 function App() {
 
