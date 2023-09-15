@@ -1,5 +1,6 @@
 import {useSelector, useDispatch} from "react-redux";
 import { useState } from "react";
+import style from "./Favorites.module.css"
 
 import Card from "../card/Card"; 
 import { orderCards, filterCards } from "../../redux/actions";
@@ -22,7 +23,7 @@ const handleFilter = (event) => {
 
 
   return (
-    <div>
+    <div className={style.favContainer}>
       <select placeholder="Gender" onChange={handleFilter}>
         {["", "Male", "Female", "unknown", "Genderless", "todos"].map((gender) => (
           <option key={gender} value={gender}>
