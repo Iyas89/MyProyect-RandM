@@ -1,9 +1,0 @@
-
-    .cardsContainer {
-         max-width: 90vw;
-         margin-bottom: 30px;
-         padding: 40px;
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-         grid-gap: 70px;
-}
