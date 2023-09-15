@@ -23,21 +23,23 @@ const handleFilter = (event) => {
 
 
   return (
-    <div className={style.favContainer}>
-      <select placeholder="Gender" onChange={handleFilter}>
-        {["", "Male", "Female", "unknown", "Genderless", "todos"].map((gender) => (
+    <div>
+      <select className={style.selectContainer} placeholder="Gender" onChange={handleFilter}>
+        {["todos", "Male", "Female", "unknown", "Genderless"].map((gender) => (
           <option key={gender} value={gender}>
             {gender}
           </option>
         ))}
       </select>
-      <select placeholder="Sort" onChange={handleOrder}>
+      <select className={style.sortContainer} placeholder="Sort" onChange={handleOrder}>
         {["Ascendente", "Descendente"].map((order) => (
           <option key={order} value={order}>
             {order}
           </option>
         ))}
+
       </select>
+        <div className={style.favContainer}>
       { 
       myFavorites?.map(fav => {
         return (
@@ -51,10 +53,11 @@ const handleFilter = (event) => {
           image={fav.image}
           onClose={fav.onClose}
           />
+          )
+        }
         )
       }
-        )
-      }
+      </div>
     </div>
     )
 

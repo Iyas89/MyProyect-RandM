@@ -1,13 +1,9 @@
 .detailContainer {
+    display: flex;
     align-items: center;
     background-color: green;
     width: 180px;
-    border: 1px solid grey;
+    border: 3px solid rgb(62, 202, 221);
     border-radius: 5px;
     padding: 20px;
-    cursor: pointer;
-    display: flex; /* Utiliza flexbox para centrar verticalmente */
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    flex-direction: column;
     }

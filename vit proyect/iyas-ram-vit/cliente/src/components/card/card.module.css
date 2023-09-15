@@ -8,9 +8,9 @@
   /* background-repeat: no-repeat; /* Evita que la imagen se repita */
   /* background-position: center center;
   background-position: center;  */
-  background-color: green;
+  background-color: rgb(72, 172, 185);
   width: 180px;
-  border: 1px solid grey;
+  border: 2px solid rgb(190, 65, 65);
   border-radius: 5px;
   padding: 20px;
   cursor: pointer;

@@ -9,3 +9,26 @@
     display: grid;
     grid-gap: 70px;
 }
+
+ 
+.selectContainer {
+    margin-right: 20px;
+    padding: 3px 7px;
+    border: solid #39ff14 1px;
+    border-radius: 3px 0px 0px 3px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+  .sortContainer {
+    margin-left: 20px;
+    padding: 3px 7px;
+    border: solid #39ff14 1px;
+    border-radius: 3px 0px 0px 3px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  

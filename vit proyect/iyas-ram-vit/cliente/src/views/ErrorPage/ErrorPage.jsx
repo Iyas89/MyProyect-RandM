@@ -1,9 +1,10 @@
-
+import portals from "../../assets/portals.png"
 
 function ErrorPage() {
   return (
     <div>
-      <h1>error404</h1>
+      <h3> error 404 </h3>
+      <img src={portals} alt="error404" />
     </div>
   );
 }
