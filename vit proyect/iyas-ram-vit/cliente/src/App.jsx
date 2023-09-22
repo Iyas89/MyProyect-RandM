@@ -20,19 +20,24 @@ function App() {
   
 
   const navigate = useNavigate();
-const [access, setAccess] = useState(true);
+const [access, setAccess] = useState( false );
 const EMAIL = 'iyasasaad@gmail.com';
 const PASSWORD = '123456';
 
-function login(userData) {
-  const {email, password} = userData;
-  const URL = "http://localhost:3001/rickandmorty/login/";
-  axios(URL + `?email=${email}&password=${password}`).then(({data}) => {
-    const {access} = data;
-    setAccess(access);
-    access && navigate("/home");
-  });
-}
+async function login(userData) {
+  try {
+    const {email, password} = userData;
+    const URL = "http://localhost:3001/rickandmorty/login/";
+    const {data} = await axios(URL + `?email=${email}&password=${password}`) 
+    const { access } = data;
+      setAccess(access);
+      access && navigate("/home");
+  } catch (error) {
+    alert(error.message);
+  }
+  };
+
+
 
   useEffect(() => {
     !access && navigate('/');
